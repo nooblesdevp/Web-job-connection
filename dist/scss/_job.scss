@@ -1,0 +1,205 @@
+.job-content{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+   
+
+    .job-filter{
+        flex: 1;
+        position: sticky;
+        top: 10px;
+        text-align: initial;
+        background: #fff;
+        border-radius: 20px;
+        padding: 30px;
+        height: auto;
+        //margin-top: 20px;
+        overflow: hidden !important;
+        
+        
+        .title{
+            font-size: 3rem;
+            text-transform: capitalize;
+            color: $secondary-color;
+        }
+        .text-p{
+            font-size: 2rem;
+            color: $secondary-color;
+            margin-bottom: 20px;
+        }
+    }
+    .input-search{
+        width: 100%;
+        overflow: hidden;
+        
+        input{
+            width: 100%;
+            height: 50px;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background: $blue-light;
+        }
+        i{
+            position: absolute;
+            font-size: 2rem;
+            padding: 14.5px;
+            background: $primary-color;
+            color: #fff;
+            margin-left: -48px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            cursor: pointer;
+            transition: 0.4s ease;
+
+            &:hover{
+                background: darken($primary-color,5%);
+            }
+        }
+    }
+    
+    .selected{
+       margin-top: 10px;
+       position: relative;
+       //max-height:100px;
+       color: #898989;
+       
+        .filer, .select-selected{
+            margin: 10px 0;
+            width: 100%;
+            height: 50px;
+            background: $blue-light;
+            border-radius: 10px;
+            border: none;
+            padding: 10px;
+            color: #898989;
+            
+
+            option{
+                color: #898989;
+                background: $blue-light;
+                font-size: 1.7rem;
+                margin: 50px 0;
+
+                &:hover{
+                    background: $blue-light;
+                }
+                &::placeholder{
+                    color: #898989;
+                }
+            }
+            
+        /* Style items (options): */
+            .select-items {
+                position: absolute;
+                background-color: DodgerBlue;
+                top: 100%;
+                left: 0;
+                right: 0;
+                z-index: 99;
+            }
+
+        }
+        .select-hide{
+            display: none;
+        }
+        .select-items{
+            position: absolute;
+            background: red;
+            &:hover{
+                background: $blue-light;
+            }
+        
+        }
+    }
+    .job-filter-content{
+        flex: 2.3;
+        position: relative;
+        overflow: hidden;
+        margin-left: 20px;
+        
+
+        .result-filter{
+            width: 100%;
+            height: auto;
+            background: #fff;
+            margin-bottom: 10px;
+            border-radius: 20px;
+
+            .result-filter-job{
+                padding: 20px;
+                text-align: left;
+
+                .title1{
+                    font-size: 2rem;
+                    color: $secondary-color;
+                    margin-bottom: 1rem;
+                }
+                .genre{
+                    display: inline-flex;
+                    margin-right: 1rem;
+                    margin-bottom: 1rem;
+                    
+
+                    i,h3{
+                        font-size: 1.5rem;
+                        margin-right: 1rem;
+                        text-align: center;
+                        text-transform: capitalize;
+                    }
+                    i{
+                        color: $primary-color;
+                    }
+                }
+               
+            }
+
+            .fa-angle-double-right{
+                font-size: 2rem;
+                float: right;
+                padding: 2rem;
+                background: $secondary-color;
+                color: #fff;
+                border-radius: 10px;
+                margin-top: -105px;
+                margin-right: 40px;
+                cursor: pointer;
+                transition: 0.4s ease;
+
+                &:hover{
+                    background: darken($primary-color,5%);
+                }
+            }
+        }
+        .btn-next{
+            padding: 12px 35px;
+            color: #fff;
+            background: $primary-color;
+            border: none;
+            border-radius: 10px;
+            font-size: 2rem;
+            float: left;
+            margin-top: 2rem;
+            cursor: pointer;
+            transition: 0.4s ease;
+
+            &:hover{
+                background: darken($primary-color,5%);
+            }
+        }
+        .fa-angle-right{
+            margin-left: 10px;
+            font-weight: bold;
+        }
+    }
+    /* Style items (options): */
+    .select-items {
+        position: absolute;
+        background-color: DodgerBlue;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 99;
+    }
+    
+}
