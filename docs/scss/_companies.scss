@@ -1,0 +1,65 @@
+.title1{
+    text-align: left;
+    color: $secondary-color;
+    text-transform: capitalize;
+    font-size: 3rem;
+}
+.companies-grid{
+    text-align: initial;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    grid-gap: 2rem;
+
+    .companies-grid-content{
+        padding: 2rem;
+        background: #fff;
+        border-radius: 20px;
+        text-align: center;
+        position: relative;
+        transition: 0.4s ease;
+
+        &:hover{
+            box-shadow: 0 0 15px #898989;
+        }
+
+        .fa{
+            font-size: 10rem;
+            text-align: center;
+            color: $secondary-color;
+            transition: 0.4s ease;
+            display: block;
+            margin: 1rem 0;
+            
+            &:hover{
+                color: $primary-color;
+            }
+        }
+        .title{
+            text-align: left;
+            margin: 2rem;
+            display: inline-block;
+            float: left;
+            color: $secondary-color;
+            font-size: 2rem;
+            margin-left: -2px;
+            cursor: pointer;
+        }
+        .fa-chevron-right{
+            //position: absolute;
+            padding: 1rem;
+            background: $primary-color;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            color: #fff;
+            cursor: pointer;
+            transition: 0.4s ease;
+            margin-top: 2rem;
+            float: right;
+
+            &:hover{
+                background: darken($primary-color,5%);
+            }
+        }   
+    }
+}
