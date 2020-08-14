@@ -1,4 +1,5 @@
 @media screen and (max-width:768px){
+
     .container{
         position: relative;
         width: 100%;
@@ -55,7 +56,7 @@
 
                 .fa-bullhorn{
                    float: right;
-                   margin-right: 18rem;
+                   //margin-right: 18rem;
                    margin-top: 2rem;
                    font-size: 12rem;
                 }
@@ -64,6 +65,10 @@
     }
     .footer{
         width: 100%;
+
+        img{
+            width: 20px !important;
+        }
 
         .faq h2{
             font-size: 3rem;
