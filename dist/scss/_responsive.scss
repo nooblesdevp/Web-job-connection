@@ -64,5 +64,21 @@
     }
     .footer{
         width: 100%;
+
+        .faq h2{
+            font-size: 3rem;
+        }
+
+        .last-post {
+            h2{
+                font-size: 1.5rem !important;
+            }
+            
+        }
+
+        .social-footer i{
+            font-size: 1rem !important;
+            margin-right: -10px !important;
+        }
     }  
 }
